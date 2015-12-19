@@ -9,6 +9,8 @@
       $('#button1').click(function(){
         Key = $("#Key").val();
         Tag = $("#Tag").val();
+		if(Tag == 'dog' ){
+        alert('ワン')};
         $.ajax({
           url: "https://api.flickr.com/services/rest/?method=flickr.photos.search&tags="+Tag+"&format=json&api_key="+Key,
           cache: false
